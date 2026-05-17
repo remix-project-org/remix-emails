@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="x-apple-disable-message-reformatting">
+<title>Remix IDE — Credits running low</title>
+<style>@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;600&display=swap');
+body,table,td,a{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+table,td{mso-table-lspace:0pt;mso-table-rspace:0pt;}
+body{margin:0!important;padding:0!important;background-color:#111318;width:100%!important;}
+a{color:inherit;}
+@media only screen and (max-width:600px){
+  .email-container{width:100%!important;}
+  .col-half{display:block!important;width:100%!important;}
+  .pad-mobile{padding:28px 24px!important;}
+  .headline{font-size:26px!important;}
+}</style>
+</head>
+<body style="margin:0;padding:0;background-color:#111318;font-family:'DM Sans',Arial,sans-serif;">
+<div style="display:none;font-size:1px;color:#111318;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">You've used most of your monthly credits. Just a heads-up.</div>
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color:#111318;">
+<tr><td style="padding:32px 16px;">
+<table class="email-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin:0 auto;background-color:#0f1117;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.1);">
+
+<!-- HEADER -->
+<tr>
+  <td class="pad-mobile" style="padding:40px 48px 32px;background-color:#0f1117;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:32px 32px;">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin-bottom:28px;"><tr>
+      <td style="vertical-align:middle;padding-right:10px;"><img src="https://remix.ethereum.org/assets/img/remix-logo-blue.png" width="36" height="36" alt="Remix IDE" style="display:block;border:0;outline:none;text-decoration:none;"></td>
+      <td style="vertical-align:middle;"><span style="font-family:'JetBrains Mono',Courier,monospace;font-size:12px;color:rgba(255,255,255,0.5);letter-spacing:0.08em;">REMIX IDE</span></td>
+    </tr></table>
+    <h1 class="headline" style="margin:0 0 12px;font-family:'DM Sans',Arial,sans-serif;font-size:32px;font-weight:300;color:#fff;line-height:1.25;letter-spacing:-0.02em;">
+Credits getting<br><span style="color:#f59e0b;font-weight:500;">low.</span></h1>
+<p style="margin:0;font-size:15px;color:rgba(255,255,255,0.5);line-height:1.6;max-width:420px;">You've used most of your monthly allowance. Just a heads-up before things slow down.</p>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding:18px 48px;background-color:#080b10;border-top:1px solid rgba(255,255,255,0.08);border-bottom:1px solid rgba(255,255,255,0.08);">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"><tr>
+      <td style="vertical-align:middle;padding-right:16px;white-space:nowrap;width:1%;">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0"><tr>
+          <td style="padding-right:6px;"><div style="width:8px;height:8px;border-radius:50%;background-color:#ff5f57;"></div></td>
+          <td style="padding-right:6px;"><div style="width:8px;height:8px;border-radius:50%;background-color:#febc2e;"></div></td>
+          <td><div style="width:8px;height:8px;border-radius:50%;background-color:#28c840;"></div></td>
+        </tr></table>
+      </td>
+      <td style="vertical-align:middle;overflow:hidden;">
+        <span style="font-family:'JetBrains Mono',Courier,monospace;font-size:12px;"><span style="color:#c084fc;">credits</span><span style="color:rgba(255,255,255,0.3);">.</span><span style="color:#f59e0b;">remaining</span> <span style="color:rgba(255,255,255,0.3);">=</span> <span style="color:#fb923c;">{{credits_remaining}}</span><span style="color:rgba(255,255,255,0.2);">;  // running low</span></span>
+      </td>
+    </tr></table>
+  </td>
+</tr><tr><td class="pad-mobile" style="padding:36px 48px;background-color:#0f1117;">
+<p style="margin:0 0 24px;font-size:16px;color:rgba(255,255,255,0.8);line-height:1.6;">
+You've got <strong style="color:#f59e0b;">{{credits_remaining}} credits</strong> left this month. They reset on {{reset_date}} — or you can top up now if you'd rather not slow down.
+</p>
+<p style="margin:0 0 14px;font-family:'JetBrains Mono',Courier,monospace;font-size:10px;color:rgba(255,255,255,0.25);letter-spacing:0.12em;text-transform:uppercase;">// current usage</p>
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom:28px;">
+  <tr><td style="background-color:#080b10;border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:20px;">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+      <tr>
+        <td style="font-family:'JetBrains Mono',Courier,monospace;font-size:11px;color:rgba(255,255,255,0.4);">Credits remaining</td>
+        <td style="text-align:right;font-family:'JetBrains Mono',Courier,monospace;font-size:11px;color:#f59e0b;">{{credits_remaining}} / {{credits_total}}</td>
+      </tr>
+    </table>
+    <div style="margin:12px 0 0;background-color:rgba(255,255,255,0.07);border-radius:4px;height:6px;">
+      <div style="background-color:#f59e0b;border-radius:4px;height:6px;width:15%;"></div>
+    </div>
+    <p style="margin:10px 0 0;font-size:12px;color:rgba(255,255,255,0.3);">Resets {{reset_date}}</p>
+  </td></tr>
+</table>
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin:8px 0 32px;">
+  <tr><td style="border-radius:8px;background-color:#f59e0b;">
+    <a href="https://remix.ethereum.org" target="_blank" style="display:inline-block;padding:14px 28px;font-family:'DM Sans',Arial,sans-serif;font-size:14px;font-weight:600;color:#080b10;text-decoration:none;border-radius:8px;letter-spacing:0.01em;">Top up credits &rarr;</a>
+  </td></tr>
+</table>
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin:0 0 28px;">
+  <tr><td style="border-top:1px solid rgba(255,255,255,0.07);font-size:0;line-height:0;">&nbsp;</td></tr>
+</table>
+<p style="margin:0;font-size:13px;color:rgba(255,255,255,0.35);line-height:1.6;">Upgrading to a higher plan also gets you more monthly credits — and resets immediately.</p>
+</td></tr>
+
+<tr>
+  <td style="padding:20px 48px;background-color:#080b10;border-top:1px solid rgba(255,255,255,0.07);">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"><tr>
+      <td style="vertical-align:middle;">
+        <span style="font-family:'JetBrains Mono',Courier,monospace;font-size:10px;color:rgba(255,255,255,0.2);">remix.ethereum.org</span>
+      </td>
+      <td style="text-align:right;vertical-align:middle;">
+        <a href="https://remix-project.org/docs" target="_blank" style="font-family:'DM Sans',Arial,sans-serif;font-size:11px;color:rgba(255,255,255,0.3);text-decoration:none;padding-left:16px;">Docs</a>
+        <a href="https://github.com/remix-project-org/remix-project" target="_blank" style="font-family:'DM Sans',Arial,sans-serif;font-size:11px;color:rgba(255,255,255,0.3);text-decoration:none;padding-left:16px;">GitHub</a>
+        <a href="{{unsubscribe_url}}" style="font-family:'DM Sans',Arial,sans-serif;font-size:11px;color:rgba(255,255,255,0.3);text-decoration:none;padding-left:16px;">Unsubscribe</a>
+      </td>
+    </tr></table>
+  </td>
+</tr>
+</table>
+</td></tr></table>
+</body>
+</html>
