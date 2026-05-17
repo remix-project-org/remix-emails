@@ -1,0 +1,156 @@
+{
+  "$schema": "./manifest.schema.json",
+  "_comment": "Each entry maps a slug to an HTML file in this repo. The sync sidecar reads this manifest and UPSERTs into the email_templates table (rows where source='git'). Marketing edits HTML; the manifest stays small.",
+  "templates": [
+    {
+      "slug": "free-upgrade",
+      "file": "01-free-upgrade.html",
+      "name": "Free → Paid upgrade nudge",
+      "subject": "Remix IDE — Ready for more?",
+      "description": "Sent to free users who are hitting limits, nudging them to upgrade.",
+      "variables": {
+        "unsubscribe_url": "Per-user unsubscribe link"
+      }
+    },
+    {
+      "slug": "discount-code",
+      "file": "02-discount-code.html",
+      "name": "Discount code",
+      "subject": "Remix IDE — A discount for you",
+      "description": "Sent when a discount/promo code is issued to a user.",
+      "variables": {
+        "discount_code": "The promo code string",
+        "discount_percent": "Percent off (number, no % sign)",
+        "expiry_date": "Human-readable expiry date",
+        "unsubscribe_url": "Per-user unsubscribe link"
+      }
+    },
+    {
+      "slug": "starter-signup",
+      "file": "03-starter-welcome.html",
+      "name": "Welcome — Starter plan",
+      "subject": "Remix IDE — Welcome to Starter",
+      "description": "Sent when a user activates the Starter subscription.",
+      "variables": {
+        "unsubscribe_url": "Per-user unsubscribe link"
+      }
+    },
+    {
+      "slug": "pro-signup",
+      "file": "04-pro-welcome.html",
+      "name": "Welcome — Pro plan",
+      "subject": "Remix IDE — You just went Pro",
+      "description": "Sent when a user activates the Pro subscription.",
+      "variables": {
+        "unsubscribe_url": "Per-user unsubscribe link"
+      }
+    },
+    {
+      "slug": "credits-low",
+      "file": "05-credits-low.html",
+      "name": "Credits running low",
+      "subject": "Remix IDE — Credits running low",
+      "description": "Sent when a user's AI credit balance falls below threshold.",
+      "variables": {
+        "credits_remaining": "Credits left this period",
+        "credits_total": "Period total credits",
+        "reset_date": "Date credits reset",
+        "unsubscribe_url": "Per-user unsubscribe link"
+      }
+    },
+    {
+      "slug": "expiring-soon",
+      "file": "06-expiring-soon.html",
+      "name": "Renewal reminder",
+      "subject": "Remix IDE — Subscription renews soon",
+      "description": "Sent N days before a subscription auto-renews.",
+      "variables": {
+        "plan_name": "Plan display name (Starter/Pro)",
+        "renewal_amount": "Renewal price formatted with currency",
+        "renewal_date": "Human-readable renewal date",
+        "unsubscribe_url": "Per-user unsubscribe link"
+      }
+    },
+    {
+      "slug": "canceled",
+      "file": "07-canceled.html",
+      "name": "Subscription canceled",
+      "subject": "Remix IDE — Subscription canceled",
+      "description": "Confirmation email when a user cancels.",
+      "variables": {
+        "plan_name": "Plan display name",
+        "end_date": "Date access ends",
+        "unsubscribe_url": "Per-user unsubscribe link"
+      }
+    },
+    {
+      "slug": "expired",
+      "file": "08-expired.html",
+      "name": "Subscription expired",
+      "subject": "Remix IDE — Subscription ended",
+      "description": "Sent when a subscription term ends without renewal.",
+      "variables": {
+        "unsubscribe_url": "Per-user unsubscribe link"
+      }
+    },
+    {
+      "slug": "feature-spotlight",
+      "file": "09-feature-spotlight.html",
+      "name": "Feature spotlight",
+      "subject": "Remix IDE — Have you tried the security agent?",
+      "description": "Periodic feature highlight email.",
+      "variables": {
+        "unsubscribe_url": "Per-user unsubscribe link"
+      }
+    },
+    {
+      "slug": "free-milestone",
+      "file": "10-free-milestone.html",
+      "name": "Free-tier milestone recap",
+      "subject": "Remix IDE — Not bad.",
+      "description": "Encouragement email at usage milestones for free users.",
+      "variables": {
+        "contracts_deployed": "Total contracts deployed",
+        "days_active": "Days active on platform",
+        "sessions_count": "Total sessions",
+        "unsubscribe_url": "Per-user unsubscribe link"
+      }
+    },
+    {
+      "slug": "beta-ending",
+      "file": "11-beta-ending.html",
+      "name": "Beta — winding down",
+      "subject": "Remix IDE Beta — Your access is winding down",
+      "description": "Heads-up notice to beta users before beta ends.",
+      "variables": {
+        "beta_end_date": "Date beta access ends",
+        "unsubscribe_url": "Per-user unsubscribe link"
+      }
+    },
+    {
+      "slug": "beta-ended",
+      "file": "12-beta-ended.html",
+      "name": "Beta ended + farewell discount",
+      "subject": "Remix IDE Beta — That's a wrap. Here's your discount.",
+      "description": "Sent when beta access ends, includes a launch-discount code.",
+      "variables": {
+        "discount_code": "Beta-grad discount code",
+        "discount_percent": "Percent off",
+        "code_expiry_date": "Date the code expires",
+        "starter_discounted_price": "Starter price after discount",
+        "pro_discounted_price": "Pro price after discount",
+        "unsubscribe_url": "Per-user unsubscribe link"
+      }
+    },
+    {
+      "slug": "welcome",
+      "file": "remix-welcome-email.html",
+      "name": "Welcome — generic signup",
+      "subject": "Welcome to Remix IDE",
+      "description": "Default welcome email on account creation.",
+      "variables": {
+        "unsubscribe_url": "Per-user unsubscribe link"
+      }
+    }
+  ]
+}
