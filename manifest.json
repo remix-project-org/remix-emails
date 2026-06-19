@@ -151,6 +151,45 @@
       "variables": {
         "unsubscribe_url": "Per-user unsubscribe link"
       }
+    },
+    {
+      "slug": "credits-purchased",
+      "file": "13-credits-purchased.html",
+      "name": "Credits purchased",
+      "subject": "Remix IDE — Credits added to your account",
+      "description": "Sent when a user purchases a credit top-up pack.",
+      "variables": {
+        "credits_amount": "Number of credits purchased",
+        "credits_total": "New total credit balance",
+        "purchase_amount": "Amount charged formatted with currency",
+        "unsubscribe_url": "Per-user unsubscribe link"
+      }
+    },
+    {
+      "slug": "subscription-activated",
+      "file": "14-subscription-activated.html",
+      "name": "Subscription activated",
+      "subject": "Remix IDE — Subscription activated",
+      "description": "Sent when a subscription payment is confirmed and the plan goes live.",
+      "variables": {
+        "plan_name": "Plan display name (Starter/Pro)",
+        "billing_amount": "Recurring billing amount formatted with currency",
+        "next_billing_date": "Human-readable next billing date",
+        "unsubscribe_url": "Per-user unsubscribe link"
+      }
+    },
+    {
+      "slug": "subscription-renewed",
+      "file": "15-subscription-renewed.html",
+      "name": "Subscription renewed",
+      "subject": "Remix IDE — Subscription renewed",
+      "description": "Sent when a subscription auto-renews successfully.",
+      "variables": {
+        "plan_name": "Plan display name (Starter/Pro)",
+        "renewal_amount": "Renewal price formatted with currency",
+        "next_renewal_date": "Human-readable next renewal date",
+        "unsubscribe_url": "Per-user unsubscribe link"
+      }
     }
   ]
 }
