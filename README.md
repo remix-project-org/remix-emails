@@ -54,7 +54,6 @@ Standard always-available variables:
 
 - `{{user.name}}`, `{{user.email}}`, `{{user.id}}`
 - `{{appName}}`
-- `{{unsubscribe_url}}` (per-user)
 
 Plus anything you pass via the event payload (e.g. `{{discount.code}}`,
 `{{plan_name}}`).

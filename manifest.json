@@ -9,7 +9,7 @@
       "subject": "Remix IDE — Ready for more?",
       "description": "Sent to free users who are hitting limits, nudging them to upgrade.",
       "variables": {
-        "unsubscribe_url": "Per-user unsubscribe link"
+        "unsubscribe_url": "One-click unsubscribe link (auto-populated per recipient)"
       }
     },
     {
@@ -22,7 +22,7 @@
         "discount_code": "The promo code string",
         "discount_percent": "Percent off (number, no % sign)",
         "expiry_date": "Human-readable expiry date",
-        "unsubscribe_url": "Per-user unsubscribe link"
+        "unsubscribe_url": "One-click unsubscribe link (auto-populated per recipient)"
       }
     },
     {
@@ -31,9 +31,7 @@
       "name": "Welcome — Starter plan",
       "subject": "Remix IDE — Welcome to Starter",
       "description": "Sent when a user activates the Starter subscription.",
-      "variables": {
-        "unsubscribe_url": "Per-user unsubscribe link"
-      }
+      "variables": {}
     },
     {
       "slug": "pro-signup",
@@ -41,9 +39,7 @@
       "name": "Welcome — Pro plan",
       "subject": "Remix IDE — You just went Pro",
       "description": "Sent when a user activates the Pro subscription.",
-      "variables": {
-        "unsubscribe_url": "Per-user unsubscribe link"
-      }
+      "variables": {}
     },
     {
       "slug": "credits-low",
@@ -54,8 +50,7 @@
       "variables": {
         "credits_remaining": "Credits left this period",
         "credits_total": "Period total credits",
-        "reset_date": "Date credits reset",
-        "unsubscribe_url": "Per-user unsubscribe link"
+        "reset_date": "Date credits reset"
       }
     },
     {
@@ -67,8 +62,7 @@
       "variables": {
         "plan_name": "Plan display name (from payload.plan_name)",
         "renewal_date": "Renewal date (from payload.current_period_end)",
-        "days_remaining": "Days until renewal (from payload.days_remaining)",
-        "unsubscribe_url": "Per-user unsubscribe link"
+        "days_remaining": "Days until renewal (from payload.days_remaining)"
       }
     },
     {
@@ -78,8 +72,7 @@
       "subject": "Remix IDE — Subscription canceled",
       "description": "Confirmation email when a user cancels. Driven by the subscription.canceled event.",
       "variables": {
-        "plan_name": "Plan display name (from payload.plan_slug)",
-        "unsubscribe_url": "Per-user unsubscribe link"
+        "plan_name": "Plan display name (from payload.plan_slug)"
       }
     },
     {
@@ -88,9 +81,7 @@
       "name": "Subscription expired",
       "subject": "Remix IDE — Subscription ended",
       "description": "Sent when a subscription term ends without renewal.",
-      "variables": {
-        "unsubscribe_url": "Per-user unsubscribe link"
-      }
+      "variables": {}
     },
     {
       "slug": "feature-spotlight",
@@ -99,7 +90,7 @@
       "subject": "Remix IDE — Have you tried the security agent?",
       "description": "Periodic feature highlight email.",
       "variables": {
-        "unsubscribe_url": "Per-user unsubscribe link"
+        "unsubscribe_url": "One-click unsubscribe link (auto-populated per recipient)"
       }
     },
     {
@@ -112,7 +103,7 @@
         "contracts_deployed": "Total contracts deployed",
         "days_active": "Days active on platform",
         "sessions_count": "Total sessions",
-        "unsubscribe_url": "Per-user unsubscribe link"
+        "unsubscribe_url": "One-click unsubscribe link (auto-populated per recipient)"
       }
     },
     {
@@ -123,7 +114,7 @@
       "description": "Heads-up notice to beta users before beta ends.",
       "variables": {
         "beta_end_date": "May 31,2026",
-        "unsubscribe_url": "Per-user unsubscribe link"
+        "unsubscribe_url": "One-click unsubscribe link (auto-populated per recipient)"
       }
     },
     {
@@ -138,7 +129,7 @@
         "code_expiry_date": "Date the code expires",
         "starter_discounted_price": "Starter price after discount",
         "pro_discounted_price": "Pro price after discount",
-        "unsubscribe_url": "Per-user unsubscribe link"
+        "unsubscribe_url": "One-click unsubscribe link (auto-populated per recipient)"
       }
     },
     {
@@ -147,9 +138,7 @@
       "name": "Welcome — generic signup",
       "subject": "Welcome to Remix IDE",
       "description": "Default welcome email on account creation.",
-      "variables": {
-        "unsubscribe_url": "Per-user unsubscribe link"
-      }
+      "variables": {}
     },
     {
       "slug": "credits-purchased",
@@ -158,8 +147,7 @@
       "subject": "Remix IDE — Credits added to your account",
       "description": "Sent when a user purchases a credit top-up pack. Driven by the credits.purchased event.",
       "variables": {
-        "credits_amount": "Number of credits purchased (from payload.credits)",
-        "unsubscribe_url": "Per-user unsubscribe link"
+        "credits_amount": "Number of credits purchased (from payload.credits)"
       }
     },
     {
@@ -169,8 +157,7 @@
       "subject": "Remix IDE — Subscription activated",
       "description": "Sent when a subscription first activates. Driven by the subscription.activated event.",
       "variables": {
-        "plan_name": "Plan display name (from payload.plan_slug)",
-        "unsubscribe_url": "Per-user unsubscribe link"
+        "plan_name": "Plan display name (from payload.plan_slug)"
       }
     },
     {
@@ -180,8 +167,7 @@
       "subject": "Remix IDE — Subscription renewed",
       "description": "Sent when a subscription advances into a new period. Driven by the subscription.renewed event.",
       "variables": {
-        "plan_name": "Plan display name (from payload.plan_slug)",
-        "unsubscribe_url": "Per-user unsubscribe link"
+        "plan_name": "Plan display name (from payload.plan_slug)"
       }
     },
     {
@@ -191,8 +177,7 @@
       "subject": "Remix IDE — New access unlocked",
       "description": "Sent when a user newly gains access to a feature group. Driven by the feature_membership.granted event.",
       "variables": {
-        "feature_name": "Feature group display name (from payload.feature_group_display_name)",
-        "unsubscribe_url": "Per-user unsubscribe link"
+        "feature_name": "Feature group display name (from payload.feature_group_display_name)"
       }
     },
     {
@@ -202,8 +187,7 @@
       "subject": "Remix IDE — Feature access ended",
       "description": "Sent when a feature-group membership is revoked. Driven by the feature_membership.revoked event.",
       "variables": {
-        "feature_name": "Feature group display name (from payload.feature_group_display_name)",
-        "unsubscribe_url": "Per-user unsubscribe link"
+        "feature_name": "Feature group display name (from payload.feature_group_display_name)"
       }
     },
     {
@@ -214,8 +198,7 @@
       "description": "Sent ahead of a feature-group membership expiry as a renewal reminder. Driven by the feature_membership.expiring_soon lifecycle event.",
       "variables": {
         "feature_name": "Feature group display name (from payload.feature_group_display_name)",
-        "days_remaining": "Days until access ends (from payload.days_remaining)",
-        "unsubscribe_url": "Per-user unsubscribe link"
+        "days_remaining": "Days until access ends (from payload.days_remaining)"
       }
     },
     {
@@ -225,8 +208,7 @@
       "subject": "Remix IDE — Feature access expired",
       "description": "Sent when a feature-group membership reaches its expiry. Driven by the feature_membership.expired lifecycle event.",
       "variables": {
-        "feature_name": "Feature group display name (from payload.feature_group_display_name)",
-        "unsubscribe_url": "Per-user unsubscribe link"
+        "feature_name": "Feature group display name (from payload.feature_group_display_name)"
       }
     }
   ]
