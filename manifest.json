@@ -189,8 +189,9 @@
       "file": "16-feature-granted.html",
       "name": "Feature access granted",
       "subject": "Remix IDE — New access unlocked",
-      "description": "Sent when a user newly gains access to a feature group. Driven by the feature_membership.granted event. Generic copy — the granted payload carries no friendly feature name.",
+      "description": "Sent when a user newly gains access to a feature group. Driven by the feature_membership.granted event.",
       "variables": {
+        "feature_name": "Feature group display name (from payload.feature_group_display_name)",
         "unsubscribe_url": "Per-user unsubscribe link"
       }
     },
@@ -199,8 +200,9 @@
       "file": "17-feature-revoked.html",
       "name": "Feature access revoked",
       "subject": "Remix IDE — Feature access ended",
-      "description": "Sent when a feature-group membership is revoked. Driven by the feature_membership.revoked event. Generic copy — the revoked payload carries no friendly feature name.",
+      "description": "Sent when a feature-group membership is revoked. Driven by the feature_membership.revoked event.",
       "variables": {
+        "feature_name": "Feature group display name (from payload.feature_group_display_name)",
         "unsubscribe_url": "Per-user unsubscribe link"
       }
     },
