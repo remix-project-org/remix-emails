@@ -63,11 +63,11 @@
       "file": "06-expiring-soon.html",
       "name": "Renewal reminder",
       "subject": "Remix IDE — Subscription renews soon",
-      "description": "Sent N days before a subscription auto-renews.",
+      "description": "Sent N days before a subscription auto-renews. Driven by the subscription.expiring_soon event.",
       "variables": {
-        "plan_name": "Plan display name (Starter/Pro)",
-        "renewal_amount": "Renewal price formatted with currency",
-        "renewal_date": "Human-readable renewal date",
+        "plan_name": "Plan display name (from payload.plan_name)",
+        "renewal_date": "Renewal date (from payload.current_period_end)",
+        "days_remaining": "Days until renewal (from payload.days_remaining)",
         "unsubscribe_url": "Per-user unsubscribe link"
       }
     },
@@ -76,10 +76,9 @@
       "file": "07-canceled.html",
       "name": "Subscription canceled",
       "subject": "Remix IDE — Subscription canceled",
-      "description": "Confirmation email when a user cancels.",
+      "description": "Confirmation email when a user cancels. Driven by the subscription.canceled event.",
       "variables": {
-        "plan_name": "Plan display name",
-        "end_date": "Date access ends",
+        "plan_name": "Plan display name (from payload.plan_slug)",
         "unsubscribe_url": "Per-user unsubscribe link"
       }
     },
@@ -157,11 +156,9 @@
       "file": "13-credits-purchased.html",
       "name": "Credits purchased",
       "subject": "Remix IDE — Credits added to your account",
-      "description": "Sent when a user purchases a credit top-up pack.",
+      "description": "Sent when a user purchases a credit top-up pack. Driven by the credits.purchased event.",
       "variables": {
-        "credits_amount": "Number of credits purchased",
-        "credits_total": "New total credit balance",
-        "purchase_amount": "Amount charged formatted with currency",
+        "credits_amount": "Number of credits purchased (from payload.credits)",
         "unsubscribe_url": "Per-user unsubscribe link"
       }
     },
@@ -170,11 +167,9 @@
       "file": "14-subscription-activated.html",
       "name": "Subscription activated",
       "subject": "Remix IDE — Subscription activated",
-      "description": "Sent when a subscription payment is confirmed and the plan goes live.",
+      "description": "Sent when a subscription first activates. Driven by the subscription.activated event.",
       "variables": {
-        "plan_name": "Plan display name (Starter/Pro)",
-        "billing_amount": "Recurring billing amount formatted with currency",
-        "next_billing_date": "Human-readable next billing date",
+        "plan_name": "Plan display name (from payload.plan_slug)",
         "unsubscribe_url": "Per-user unsubscribe link"
       }
     },
@@ -183,11 +178,9 @@
       "file": "15-subscription-renewed.html",
       "name": "Subscription renewed",
       "subject": "Remix IDE — Subscription renewed",
-      "description": "Sent when a subscription auto-renews successfully.",
+      "description": "Sent when a subscription advances into a new period. Driven by the subscription.renewed event.",
       "variables": {
-        "plan_name": "Plan display name (Starter/Pro)",
-        "renewal_amount": "Renewal price formatted with currency",
-        "next_renewal_date": "Human-readable next renewal date",
+        "plan_name": "Plan display name (from payload.plan_slug)",
         "unsubscribe_url": "Per-user unsubscribe link"
       }
     }

@@ -18,7 +18,7 @@ a{color:inherit;}
 }</style>
 </head>
 <body style="margin:0;padding:0;background-color:#111318;font-family:'DM Sans',Arial,sans-serif;">
-<div style="display:none;font-size:1px;color:#111318;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">{{credits_amount}} credits added to your account. Your new balance is {{credits_total}}.</div>
+<div style="display:none;font-size:1px;color:#111318;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">{{credits_amount}} credits added to your account and ready to use.</div>
 <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color:#111318;">
 <tr><td style="padding:32px 16px;">
 <table class="email-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin:0 auto;background-color:#0f1117;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.1);">
@@ -48,7 +48,7 @@ Credits<br><span style="color:#2dd4bf;font-weight:500;">added.</span></h1>
         </tr></table>
       </td>
       <td style="vertical-align:middle;overflow:hidden;">
-        <span style="font-family:'JetBrains Mono',Courier,monospace;font-size:12px;"><span style="color:#c084fc;">credits</span><span style="color:rgba(255,255,255,0.3);">.</span><span style="color:#2dd4bf;">balance</span> <span style="color:rgba(255,255,255,0.3);">=</span> <span style="color:#4ade80;">{{credits_total}}</span><span style="color:rgba(255,255,255,0.2);">;  // +{{credits_amount}} added</span></span>
+        <span style="font-family:'JetBrains Mono',Courier,monospace;font-size:12px;"><span style="color:#c084fc;">credits</span><span style="color:rgba(255,255,255,0.3);">.</span><span style="color:#2dd4bf;">added</span> <span style="color:rgba(255,255,255,0.3);">=</span> <span style="color:#4ade80;">{{credits_amount}}</span><span style="color:rgba(255,255,255,0.2);">;  // ready to use</span></span>
       </td>
     </tr></table>
   </td>
@@ -57,7 +57,7 @@ Credits<br><span style="color:#2dd4bf;font-weight:500;">added.</span></h1>
 <!-- BODY -->
 <tr><td class="pad-mobile" style="padding:36px 48px;background-color:#0f1117;">
 <p style="margin:0 0 24px;font-size:16px;color:rgba(255,255,255,0.8);line-height:1.6;">
-You topped up with <strong style="color:#2dd4bf;">{{credits_amount}} credits</strong> for <strong style="color:#fff;">{{purchase_amount}}</strong>. They're available immediately — no waiting, no refresh needed.
+You topped up with <strong style="color:#2dd4bf;">{{credits_amount}} credits</strong>. They're available immediately — no waiting, no refresh needed.
 </p>
 
 <p style="margin:0 0 14px;font-family:'JetBrains Mono',Courier,monospace;font-size:10px;color:rgba(255,255,255,0.25);letter-spacing:0.12em;text-transform:uppercase;">// purchase summary</p>
@@ -66,16 +66,8 @@ You topped up with <strong style="color:#2dd4bf;">{{credits_amount}} credits</st
   <tr><td style="background-color:#080b10;border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:20px 24px;">
     <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
       <tr>
-        <td style="padding-bottom:14px;font-size:13px;color:rgba(255,255,255,0.45);">Credits purchased</td>
-        <td style="padding-bottom:14px;text-align:right;font-family:'JetBrains Mono',Courier,monospace;font-size:13px;color:#2dd4bf;">+{{credits_amount}}</td>
-      </tr>
-      <tr>
-        <td style="padding-bottom:14px;font-size:13px;color:rgba(255,255,255,0.45);border-top:1px solid rgba(255,255,255,0.06);padding-top:14px;">New balance</td>
-        <td style="padding-bottom:14px;text-align:right;font-family:'JetBrains Mono',Courier,monospace;font-size:13px;color:#fff;border-top:1px solid rgba(255,255,255,0.06);padding-top:14px;">{{credits_total}}</td>
-      </tr>
-      <tr>
-        <td style="font-size:13px;color:rgba(255,255,255,0.45);border-top:1px solid rgba(255,255,255,0.06);padding-top:14px;">Amount charged</td>
-        <td style="text-align:right;font-family:'JetBrains Mono',Courier,monospace;font-size:13px;color:rgba(255,255,255,0.65);border-top:1px solid rgba(255,255,255,0.06);padding-top:14px;">{{purchase_amount}}</td>
+        <td style="font-size:13px;color:rgba(255,255,255,0.45);">Credits added</td>
+        <td style="text-align:right;font-family:'JetBrains Mono',Courier,monospace;font-size:13px;color:#2dd4bf;">+{{credits_amount}}</td>
       </tr>
     </table>
   </td></tr>
