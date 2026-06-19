@@ -183,6 +183,49 @@
         "plan_name": "Plan display name (from payload.plan_slug)",
         "unsubscribe_url": "Per-user unsubscribe link"
       }
+    },
+    {
+      "slug": "feature-granted",
+      "file": "16-feature-granted.html",
+      "name": "Feature access granted",
+      "subject": "Remix IDE — New access unlocked",
+      "description": "Sent when a user newly gains access to a feature group. Driven by the feature_membership.granted event. Generic copy — the granted payload carries no friendly feature name.",
+      "variables": {
+        "unsubscribe_url": "Per-user unsubscribe link"
+      }
+    },
+    {
+      "slug": "feature-revoked",
+      "file": "17-feature-revoked.html",
+      "name": "Feature access revoked",
+      "subject": "Remix IDE — Feature access ended",
+      "description": "Sent when a feature-group membership is revoked. Driven by the feature_membership.revoked event. Generic copy — the revoked payload carries no friendly feature name.",
+      "variables": {
+        "unsubscribe_url": "Per-user unsubscribe link"
+      }
+    },
+    {
+      "slug": "feature-expiring-soon",
+      "file": "19-feature-expiring-soon.html",
+      "name": "Feature access expiring soon",
+      "subject": "Remix IDE — Feature access ending soon",
+      "description": "Sent ahead of a feature-group membership expiry as a renewal reminder. Driven by the feature_membership.expiring_soon lifecycle event.",
+      "variables": {
+        "feature_name": "Feature group display name (from payload.feature_group_display_name)",
+        "days_remaining": "Days until access ends (from payload.days_remaining)",
+        "unsubscribe_url": "Per-user unsubscribe link"
+      }
+    },
+    {
+      "slug": "feature-expired",
+      "file": "18-feature-expired.html",
+      "name": "Feature access expired",
+      "subject": "Remix IDE — Feature access expired",
+      "description": "Sent when a feature-group membership reaches its expiry. Driven by the feature_membership.expired lifecycle event.",
+      "variables": {
+        "feature_name": "Feature group display name (from payload.feature_group_display_name)",
+        "unsubscribe_url": "Per-user unsubscribe link"
+      }
     }
   ]
 }
