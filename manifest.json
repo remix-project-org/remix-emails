@@ -210,6 +210,27 @@
       "variables": {
         "feature_name": "Feature group display name (from payload.feature_group_display_name)"
       }
+    },
+    {
+      "slug": "subscription-cancellation-scheduled",
+      "file": "20-subscription-cancellation-scheduled.html",
+      "name": "Cancellation scheduled",
+      "subject": "Remix IDE — Cancellation scheduled",
+      "description": "Confirmation sent when a user schedules a cancellation. Access continues until the effective date. Driven by the subscription.cancellation_scheduled event.",
+      "variables": {
+        "plan_name": "Plan display name (from payload.plan_name)",
+        "effective_date": "Date the cancellation takes effect (from payload.effective_at)"
+      }
+    },
+    {
+      "slug": "subscription-reactivated",
+      "file": "21-subscription-reactivated.html",
+      "name": "Subscription reactivated",
+      "subject": "Remix IDE — You're staying",
+      "description": "Confirmation sent when a user reverses a scheduled cancellation. The subscription keeps billing normally. Driven by the subscription.reactivated event.",
+      "variables": {
+        "plan_name": "Plan display name (from payload.plan_slug)"
+      }
     }
   ]
 }
