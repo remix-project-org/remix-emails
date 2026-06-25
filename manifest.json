@@ -121,7 +121,7 @@
       "slug": "beta-ended",
       "file": "12-beta-ended.html",
       "name": "Beta ended + farewell discount",
-      "subject": "Remix IDE Beta — That's a wrap. Here's your discount.",
+      "subject": "Remix IDE Beta Has Ended: Claim Your 60% Discount",
       "description": "Sent when beta access ends, includes a launch-discount code.",
       "variables": {
         "discount_code": "Beta-grad discount code",
