@@ -231,6 +231,16 @@
       "variables": {
         "plan_name": "Plan display name (from payload.plan_slug)"
       }
+    },
+    {
+      "slug": "subscription-updated",
+      "file": "22-subscription-updated.html",
+      "name": "Subscription updated",
+      "subject": "Remix IDE — Subscription updated",
+      "description": "Sent when an active subscription is modified (plan change, quantity, or payment details) without advancing into a new billing period. Driven by the subscription.updated event.",
+      "variables": {
+        "plan_name": "Plan display name (from payload.plan_slug)"
+      }
     }
   ]
 }
