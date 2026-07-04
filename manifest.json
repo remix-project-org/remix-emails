@@ -241,6 +241,28 @@
       "variables": {
         "plan_name": "Plan display name (from payload.plan_slug)"
       }
+    },
+    {
+      "slug": "abandoned-credits-checkout",
+      "file": "23-abandoned-credits-checkout.html",
+      "name": "Abandoned credits checkout",
+      "subject": "Quick question about your Remix credits",
+      "description": "Friendly reminder sent when a user starts but does not complete a credit top-up checkout. Includes a resume link and invites feedback. Driven by the checkout.abandoned event (credits).",
+      "variables": {
+        "product_name": "Credit pack display name (from payload.product_name)",
+        "resume_link": "URL to resume the incomplete checkout (from payload.resume_link)"
+      }
+    },
+    {
+      "slug": "abandoned-subscription-checkout",
+      "file": "24-abandoned-subscription-checkout.html",
+      "name": "Abandoned subscription checkout",
+      "subject": "Quick question about your Remix subscription",
+      "description": "Friendly reminder sent when a user starts but does not complete a subscription checkout. Includes a resume link and invites feedback. Driven by the checkout.abandoned event (subscription).",
+      "variables": {
+        "plan_name": "Plan display name (from payload.plan_slug or payload.plan_name)",
+        "resume_link": "URL to resume the incomplete checkout (from payload.resume_link)"
+      }
     }
   ]
 }
