@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="x-apple-disable-message-reformatting">
+<title>New form submission — {{form_name}}</title>
+<style>@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;600&display=swap');
+body,table,td,a{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+table,td{mso-table-lspace:0pt;mso-table-rspace:0pt;}
+body{margin:0!important;padding:0!important;background-color:#111318;width:100%!important;}
+a{color:inherit;}
+@media only screen and (max-width:600px){
+  .email-container{width:100%!important;}
+  .pad-mobile{padding:28px 24px!important;}
+  .headline{font-size:26px!important;}
+}</style>
+</head>
+<body style="margin:0;padding:0;background-color:#111318;font-family:'DM Sans',Arial,sans-serif;">
+<div style="display:none;font-size:1px;color:#111318;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">New response submitted to {{form_name}}.</div>
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color:#111318;">
+<tr><td style="padding:32px 16px;">
+<table class="email-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin:0 auto;background-color:#0f1117;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.1);">
+
+<!-- HEADER -->
+<tr>
+  <td class="pad-mobile" style="padding:40px 48px 32px;background-color:#0f1117;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:32px 32px;">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin-bottom:28px;"><tr>
+      <td style="vertical-align:middle;padding-right:10px;"><img src="https://remix.ethereum.org/assets/img/remix-logo-blue.png" width="36" height="36" alt="Remix IDE" style="display:block;border:0;outline:none;text-decoration:none;"></td>
+      <td style="vertical-align:middle;"><span style="font-family:'JetBrains Mono',Courier,monospace;font-size:12px;color:rgba(255,255,255,0.5);letter-spacing:0.08em;">REMIX FORMS</span></td>
+    </tr></table>
+    <h1 class="headline" style="margin:0 0 12px;font-family:'DM Sans',Arial,sans-serif;font-size:32px;font-weight:300;color:#fff;line-height:1.25;letter-spacing:-0.02em;">
+New<br><span style="color:#4f8cff;font-weight:500;">submission.</span></h1>
+<p style="margin:0;font-size:15px;color:rgba(255,255,255,0.5);line-height:1.6;max-width:420px;">Someone just completed <strong style="color:rgba(255,255,255,0.8);">{{form_name}}</strong>.</p>
+  </td>
+</tr>
+
+<!-- META BAR -->
+<tr>
+  <td style="padding:18px 48px;background-color:#080b10;border-top:1px solid rgba(255,255,255,0.08);border-bottom:1px solid rgba(255,255,255,0.08);">
+    <span style="font-family:'JetBrains Mono',Courier,monospace;font-size:12px;"><span style="color:#c084fc;">form</span><span style="color:rgba(255,255,255,0.3);">.</span><span style="color:#4f8cff;">submitted</span> <span style="color:rgba(255,255,255,0.3);">=</span> <span style="color:#4f8cff;">"{{submission_id}}"</span><span style="color:rgba(255,255,255,0.2);">;  // {{submitted_at}}</span></span>
+  </td>
+</tr>
+
+<!-- BODY -->
+<tr><td class="pad-mobile" style="padding:36px 48px;background-color:#0f1117;">
+<p style="margin:0 0 8px;font-size:12px;font-family:'JetBrains Mono',Courier,monospace;color:rgba(255,255,255,0.35);letter-spacing:0.06em;text-transform:uppercase;">Submitted by</p>
+<p style="margin:0 0 28px;font-size:16px;color:rgba(255,255,255,0.9);line-height:1.6;">{{submitter_email}}</p>
+
+<p style="margin:0 0 12px;font-size:12px;font-family:'JetBrains Mono',Courier,monospace;color:rgba(255,255,255,0.35);letter-spacing:0.06em;text-transform:uppercase;">Responses</p>
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin:0 0 28px;background-color:#080b10;border-radius:8px;border:1px solid rgba(255,255,255,0.08);border-collapse:separate;overflow:hidden;">
+{{answers_html}}
+</table>
+
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin:0 0 28px;">
+  <tr><td style="border-top:1px solid rgba(255,255,255,0.07);font-size:0;line-height:0;">&nbsp;</td></tr>
+</table>
+<p style="margin:0;font-size:13px;color:rgba(255,255,255,0.35);line-height:1.6;">Sent automatically by Remix Forms</p>
+</td></tr>
+
+<!-- FOOTER -->
+<tr>
+  <td style="padding:20px 48px;background-color:#080b10;border-top:1px solid rgba(255,255,255,0.07);">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"><tr>
+      <td style="vertical-align:middle;">
+        <span style="font-family:'JetBrains Mono',Courier,monospace;font-size:10px;color:rgba(255,255,255,0.2);">forms.remix.live</span>
+      </td>
+      <td style="text-align:right;vertical-align:middle;">
+        <span style="font-family:'DM Sans',Arial,sans-serif;font-size:11px;color:rgba(255,255,255,0.3);">Internal team notification</span>
+      </td>
+    </tr></table>
+  </td>
+</tr>
+</table>
+</td></tr></table>
+</body>
+</html>

@@ -263,6 +263,31 @@
         "plan_name": "Plan display name (from payload.plan_slug or payload.plan_name)",
         "resume_link": "URL to resume the incomplete checkout (from payload.resume_link)"
       }
+    },
+    {
+      "slug": "form-submission-team",
+      "file": "26-form-submission-team.html",
+      "name": "Form submission — team notification",
+      "subject": "New submission: {{form_name}}",
+      "description": "Internal notification sent to the team when someone submits a FormBuilder form. Shows the submitted answers. Driven by the form.submitted event (set to: admins or to: {{payload.notification_email}}).",
+      "variables": {
+        "form_name": "Form name (from payload.form_name)",
+        "submission_id": "Submission UUID (from payload.submission_id)",
+        "submitted_at": "ISO timestamp of the submission (from payload.submitted_at)",
+        "submitter_email": "Email the submitter entered, if any (from payload.submitter_email)",
+        "answers_html": "Pre-rendered, HTML-escaped table rows of the answers (from payload.answers_html)"
+      }
+    },
+    {
+      "slug": "form-submission-confirmation",
+      "file": "27-form-submission-confirmation.html",
+      "name": "Form submission — submitter confirmation",
+      "subject": "We received your response — {{form_name}}",
+      "description": "Confirmation sent to the person who submitted a FormBuilder form, echoing a copy of their response. Driven by the form.submitted event (set to: {{payload.submitter_email}}).",
+      "variables": {
+        "form_name": "Form name (from payload.form_name)",
+        "answers_html": "Pre-rendered, HTML-escaped table rows of the answers (from payload.answers_html)"
+      }
     }
   ]
 }
