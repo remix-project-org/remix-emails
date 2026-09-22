@@ -279,6 +279,27 @@
       }
     },
     {
+      "slug": "credits-depleted-reengagement",
+      "file": "29-credits-depleted-reengagement.html",
+      "name": "Credits depleted — AI re-engagement",
+      "subject": "Remix IDE — Keep using AI without credits",
+      "description": "Sent to users who have run out of credits and stopped using RemixAI. Offers two paths to continue: switch to a low cost model, or connect a personal API key (OpenRouter / AWS Bedrock).",
+      "variables": {
+        "unsubscribe_url": "One-click unsubscribe link (auto-populated per recipient)"
+      }
+    },
+    {
+      "slug": "ai-features-reengagement",
+      "file": "28-ai-features-reengagement.html",
+      "name": "AI features re-engagement",
+      "subject": "Remix IDE — AI features worth trying",
+      "description": "Sent to users who have not used or barely used AI features. Showcases three features: AI Skills / Security Audit / Gas Audit in the Solidity compiler, low cost models in RemixAI, and bring-your-own API key (OpenRouter / AWS Bedrock). Includes a link to the feedback form.",
+      "variables": {
+        "feedback_url": "URL of the feedback form",
+        "unsubscribe_url": "One-click unsubscribe link (auto-populated per recipient)"
+      }
+    },
+    {
       "slug": "form-submission-confirmation",
       "file": "27-form-submission-confirmation.html",
       "name": "Form submission — submitter confirmation",
