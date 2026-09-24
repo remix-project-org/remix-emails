@@ -300,6 +300,39 @@
       }
     },
     {
+      "slug": "subscriber-inactive",
+      "file": "30-subscriber-inactive.html",
+      "name": "Subscriber gone quiet",
+      "subject": "Remix IDE — Your plan is waiting",
+      "description": "Churn-risk nudge for users with an ACTIVE subscription who have stopped using AI. Reminds them what their plan already includes (security audit, gas audit, workspace context) rather than selling anything. Driven by a segment on has_active_subscription + ai_inactive_days.",
+      "variables": {
+        "plan_name": "Their current plan (from payload.plan_slug)",
+        "unsubscribe_url": "One-click unsubscribe link (auto-populated per recipient)"
+      }
+    },
+    {
+      "slug": "credits-idle",
+      "file": "31-credits-idle.html",
+      "name": "Credits sitting idle",
+      "subject": "Remix IDE — Your credits are still here",
+      "description": "For users holding a meaningful unspent credit balance who have gone quiet. Leads with the actual balance as a large figure, then two concrete low-effort ways to spend it. Driven by a segment on min_credits + ai_inactive_days.",
+      "variables": {
+        "credit_balance": "Unspent credit balance (from payload.credit_balance)",
+        "unsubscribe_url": "One-click unsubscribe link (auto-populated per recipient)"
+      }
+    },
+    {
+      "slug": "winback-lapsed",
+      "file": "32-winback-lapsed.html",
+      "name": "Win-back — lapsed payer",
+      "subject": "Remix IDE — What's changed since you left",
+      "description": "Win-back for proven buyers who no longer have an active subscription and have gone quiet. Deliberately low-pressure: what changed, workspaces intact, plus an invitation to reply with why they left. Driven by a segment on has_purchased + has_active_subscription=false.",
+      "variables": {
+        "days_since_last_ai": "Days since their last AI call (from payload.days_since_last_ai)",
+        "unsubscribe_url": "One-click unsubscribe link (auto-populated per recipient)"
+      }
+    },
+    {
       "slug": "form-submission-confirmation",
       "file": "27-form-submission-confirmation.html",
       "name": "Form submission — submitter confirmation",
