@@ -353,6 +353,17 @@
         "form_name": "Form name (from payload.form_name)",
         "answers_html": "Pre-rendered, HTML-escaped table rows of the answers (from payload.answers_html)"
       }
+    },
+    {
+      "slug": "email-otp",
+      "file": "34-email-verification.html",
+      "name": "Email login / verification code",
+      "subject": "Remix IDE — Your verification code",
+      "description": "One-time 6-digit code (expires in 10 min) sent by the auth service for email OTP sign-in and email verification. Sent via /email/send/transactional with template_slug 'email-otp'.",
+      "variables": {
+        "code": "The one-time verification code",
+        "tip": "Short feature tip, picked at random by the auth service (OTP_TIPS in providers/email.ts)"
+      }
     }
   ]
 }
