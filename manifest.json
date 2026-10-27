@@ -368,10 +368,11 @@
     {
       "slug": "monthly-credits-granted",
       "file": "35-monthly-credits-granted.html",
-      "name": "Monthly Pro credits granted",
-      "subject": "Remix IDE — {{credits_granted}} Pro credits just landed",
-      "description": "Promotional notice sent when a Pro subscriber's monthly free credits are added. Big +amount figure, four things to spend them on (agent mode, security audit, gas audit, Front End), and how the rollover cap works. Driven by the credits.granted event (only emitted when the grant is > 0), condition payload.reason eq subscriber_monthly_credits.",
+      "name": "Monthly plan credits granted",
+      "subject": "Remix IDE — {{credits_granted}} {{plan_name}} credits just landed",
+      "description": "Promotional notice sent when a subscriber's monthly free credits are added (any plan: Pro, Starter, Lite — plan shown via {{plan_name}}). Big +amount figure, four things to spend them on (agent mode, security audit, gas audit, Front End), and how the rollover cap works. Driven by the credits.granted event (only emitted when the grant is > 0), condition payload.reason eq subscriber_monthly_credits.",
       "variables": {
+        "plan_name": "Display name of the user's plan, e.g. Pro / Starter / Lite (from payload.plan_name)",
         "credits_granted": "Credits added this month, formatted (from payload.credits_granted_display)",
         "free_balance": "Free balance after the grant, formatted (from payload.free_balance_display)",
         "max_balance": "Maximum free balance that carries over, formatted (from payload.max_balance_display)",
