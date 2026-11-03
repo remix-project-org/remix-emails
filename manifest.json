@@ -378,6 +378,16 @@
         "max_balance": "Maximum free balance that carries over, formatted (from payload.max_balance_display)",
         "unsubscribe_url": "One-click unsubscribe link (auto-populated per recipient)"
       }
+    },
+    {
+      "slug": "payment-failed",
+      "file": "36-payment-failed.html",
+      "name": "Subscription payment failed (past due)",
+      "subject": "Remix IDE — Action needed: your {{plan_name}} payment didn't go through",
+      "description": "Transactional notice when Paddle could not collect a renewal payment and the subscription went past_due. Explains the plan is still active for now, how to update the payment method (Account → Plan & Credits), and that the subscription is canceled if retries keep failing. Driven by the subscription.past_due event (one per billing period).",
+      "variables": {
+        "plan_name": "Display name of the user's plan, e.g. Pro / Starter / Lite (from payload.plan_name)"
+      }
     }
   ]
 }
