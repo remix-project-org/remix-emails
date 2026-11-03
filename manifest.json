@@ -388,6 +388,17 @@
       "variables": {
         "plan_name": "Display name of the user's plan, e.g. Pro / Starter / Lite (from payload.plan_name)"
       }
+    },
+    {
+      "slug": "payment-failed-reminder",
+      "file": "37-payment-failed-reminder.html",
+      "name": "Subscription payment failed — reminder",
+      "subject": "Reminder: your Remix {{plan_name}} plan will be canceled — update your payment method",
+      "description": "Follow-up for subscriptions still past_due N days after the failed renewal. Stronger wording than payment-failed: shows how many days it has been unpaid and that the plan is canceled when retries run out. Driven by a segment on past_due_min_days that repeats while the user stays past_due (event subscription.past_due_reminder).",
+      "variables": {
+        "plan_name": "Display name of the user's plan (from payload.plan_name)",
+        "days_past_due": "Days since the failed renewal (from payload.days_past_due)"
+      }
     }
   ]
 }
