@@ -5,8 +5,8 @@
     {
       "slug": "free-upgrade",
       "file": "01-free-upgrade.html",
-      "name": "Free \u2192 Paid upgrade nudge",
-      "subject": "Remix IDE \u2014 Ready for more?",
+      "name": "Free → Paid upgrade nudge",
+      "subject": "Remix IDE — Ready for more?",
       "description": "Sent to free users who are hitting limits, nudging them to upgrade.",
       "variables": {
         "unsubscribe_url": "One-click unsubscribe link (auto-populated per recipient)"
@@ -16,7 +16,7 @@
       "slug": "discount-code",
       "file": "02-discount-code.html",
       "name": "Discount code",
-      "subject": "Remix IDE \u2014 A discount for you",
+      "subject": "Remix IDE — A discount for you",
       "description": "Sent when a discount/promo code is issued to a user.",
       "variables": {
         "discount_code": "The promo code string",
@@ -28,16 +28,16 @@
     {
       "slug": "starter-signup",
       "file": "03-starter-welcome.html",
-      "name": "Welcome \u2014 Starter plan",
-      "subject": "Remix IDE \u2014 Welcome to Starter",
+      "name": "Welcome — Starter plan",
+      "subject": "Remix IDE — Welcome to Starter",
       "description": "Sent when a user activates the Starter subscription.",
       "variables": {}
     },
     {
       "slug": "pro-signup",
       "file": "04-pro-welcome.html",
-      "name": "Welcome \u2014 Pro plan",
-      "subject": "Remix IDE \u2014 You just went Pro",
+      "name": "Welcome — Pro plan",
+      "subject": "Remix IDE — You just went Pro",
       "description": "Sent when a user activates the Pro subscription.",
       "variables": {}
     },
@@ -45,7 +45,7 @@
       "slug": "credits-low",
       "file": "05-credits-low.html",
       "name": "Credits running low",
-      "subject": "Remix IDE \u2014 Credits running low",
+      "subject": "Remix IDE — Credits running low",
       "description": "Sent when a user's AI credit balance falls below threshold.",
       "variables": {
         "credits_remaining": "Credits left this period",
@@ -57,7 +57,7 @@
       "slug": "expiring-soon",
       "file": "06-expiring-soon.html",
       "name": "Renewal reminder",
-      "subject": "Remix IDE \u2014 Subscription renews soon",
+      "subject": "Remix IDE — Subscription renews soon",
       "description": "Sent N days before a subscription auto-renews. Driven by the subscription.expiring_soon event.",
       "variables": {
         "plan_name": "Plan display name (from payload.plan_name)",
@@ -69,7 +69,7 @@
       "slug": "canceled",
       "file": "07-canceled.html",
       "name": "Subscription canceled",
-      "subject": "Remix IDE \u2014 Subscription canceled",
+      "subject": "Remix IDE — Subscription canceled",
       "description": "Confirmation email when a user cancels. Driven by the subscription.canceled event.",
       "variables": {
         "plan_name": "Plan display name (from payload.plan_slug)"
@@ -79,7 +79,7 @@
       "slug": "expired",
       "file": "08-expired.html",
       "name": "Subscription expired",
-      "subject": "Remix IDE \u2014 Subscription ended",
+      "subject": "Remix IDE — Subscription ended",
       "description": "Sent when a subscription term ends without renewal.",
       "variables": {}
     },
@@ -87,7 +87,7 @@
       "slug": "feature-spotlight",
       "file": "09-feature-spotlight.html",
       "name": "Feature spotlight",
-      "subject": "Remix IDE \u2014 Have you tried the security agent?",
+      "subject": "Remix IDE — Have you tried the security agent?",
       "description": "Periodic feature highlight email.",
       "variables": {
         "unsubscribe_url": "One-click unsubscribe link (auto-populated per recipient)"
@@ -97,7 +97,7 @@
       "slug": "free-milestone",
       "file": "10-free-milestone.html",
       "name": "Free-tier milestone recap",
-      "subject": "Remix IDE \u2014 Not bad.",
+      "subject": "Remix IDE — Not bad.",
       "description": "Encouragement email at usage milestones for free users.",
       "variables": {
         "contracts_deployed": "Total contracts deployed",
@@ -109,7 +109,7 @@
     {
       "slug": "beta-ending",
       "file": "11-beta-ending.html",
-      "name": "Beta \u2014 winding down",
+      "name": "Beta — winding down",
       "subject": "Remix IDE Beta Ending Soon: Claim Your 60% Discount",
       "description": "Heads-up notice to beta users before beta ends.",
       "variables": {
@@ -135,7 +135,7 @@
     {
       "slug": "welcome-signup",
       "file": "remix-welcome-email.html",
-      "name": "Welcome \u2014 generic signup",
+      "name": "Welcome — generic signup",
       "subject": "Welcome to Remix IDE",
       "description": "Default welcome email on account creation.",
       "variables": {}
@@ -144,7 +144,7 @@
       "slug": "credits-purchased",
       "file": "13-credits-purchased.html",
       "name": "Credits purchased",
-      "subject": "Remix IDE \u2014 Credits added to your account",
+      "subject": "Remix IDE — Credits added to your account",
       "description": "Sent when a user purchases a credit top-up pack. Driven by the credits.purchased event.",
       "variables": {
         "credits_amount": "Number of credits purchased (from payload.credits)"
@@ -154,7 +154,7 @@
       "slug": "subscription-activated",
       "file": "14-subscription-activated.html",
       "name": "Subscription activated",
-      "subject": "Remix IDE \u2014 Subscription activated",
+      "subject": "Remix IDE — Subscription activated",
       "description": "Sent when a subscription first activates. Driven by the subscription.activated event.",
       "variables": {
         "plan_name": "Plan display name (from payload.plan_slug)"
@@ -164,7 +164,7 @@
       "slug": "subscription-renewed",
       "file": "15-subscription-renewed.html",
       "name": "Subscription renewed",
-      "subject": "Remix IDE \u2014 Subscription renewed",
+      "subject": "Remix IDE — Subscription renewed",
       "description": "Sent when a subscription advances into a new period. Driven by the subscription.renewed event.",
       "variables": {
         "plan_name": "Plan display name (from payload.plan_slug)"
@@ -174,7 +174,7 @@
       "slug": "feature-granted",
       "file": "16-feature-granted.html",
       "name": "Feature access granted",
-      "subject": "Remix IDE \u2014 New access unlocked",
+      "subject": "Remix IDE — New access unlocked",
       "description": "Sent when a user newly gains access to a feature group. Driven by the feature_membership.granted event.",
       "variables": {
         "feature_name": "Feature group display name (from payload.feature_group_display_name)"
@@ -184,7 +184,7 @@
       "slug": "feature-revoked",
       "file": "17-feature-revoked.html",
       "name": "Feature access revoked",
-      "subject": "Remix IDE \u2014 Feature access ended",
+      "subject": "Remix IDE — Feature access ended",
       "description": "Sent when a feature-group membership is revoked. Driven by the feature_membership.revoked event.",
       "variables": {
         "feature_name": "Feature group display name (from payload.feature_group_display_name)"
@@ -194,7 +194,7 @@
       "slug": "feature-expiring-soon",
       "file": "19-feature-expiring-soon.html",
       "name": "Feature access expiring soon",
-      "subject": "Remix IDE \u2014 Feature access ending soon",
+      "subject": "Remix IDE — Feature access ending soon",
       "description": "Sent ahead of a feature-group membership expiry as a renewal reminder. Driven by the feature_membership.expiring_soon lifecycle event.",
       "variables": {
         "feature_name": "Feature group display name (from payload.feature_group_display_name)",
@@ -205,7 +205,7 @@
       "slug": "feature-expired",
       "file": "18-feature-expired.html",
       "name": "Feature access expired",
-      "subject": "Remix IDE \u2014 Feature access expired",
+      "subject": "Remix IDE — Feature access expired",
       "description": "Sent when a feature-group membership reaches its expiry. Driven by the feature_membership.expired lifecycle event.",
       "variables": {
         "feature_name": "Feature group display name (from payload.feature_group_display_name)"
@@ -215,7 +215,7 @@
       "slug": "subscription-cancellation-scheduled",
       "file": "20-subscription-cancellation-scheduled.html",
       "name": "Cancellation scheduled",
-      "subject": "Remix IDE \u2014 Cancellation scheduled",
+      "subject": "Remix IDE — Cancellation scheduled",
       "description": "Confirmation sent when a user schedules a cancellation. Access continues until the effective date. Driven by the subscription.cancellation_scheduled event.",
       "variables": {
         "plan_name": "Plan display name (from payload.plan_name)",
@@ -226,7 +226,7 @@
       "slug": "subscription-reactivated",
       "file": "21-subscription-reactivated.html",
       "name": "Subscription reactivated",
-      "subject": "Remix IDE \u2014 You're staying",
+      "subject": "Remix IDE — You're staying",
       "description": "Confirmation sent when a user reverses a scheduled cancellation. The subscription keeps billing normally. Driven by the subscription.reactivated event.",
       "variables": {
         "plan_name": "Plan display name (from payload.plan_slug)"
@@ -236,7 +236,7 @@
       "slug": "subscription-updated",
       "file": "22-subscription-updated.html",
       "name": "Subscription updated",
-      "subject": "Remix IDE \u2014 Subscription updated",
+      "subject": "Remix IDE — Subscription updated",
       "description": "Sent when an active subscription is modified (plan change, quantity, or payment details) without advancing into a new billing period. Driven by the subscription.updated event.",
       "variables": {
         "plan_name": "Plan display name (from payload.plan_slug)"
@@ -267,7 +267,7 @@
     {
       "slug": "form-submission-team",
       "file": "26-form-submission-team.html",
-      "name": "Form submission \u2014 team notification",
+      "name": "Form submission — team notification",
       "subject": "New submission: {{form_name}}",
       "description": "Internal notification sent to the team when someone submits a FormBuilder form. Shows the submitted answers. Driven by the form.submitted event (set to: admins or to: {{payload.notification_email}}).",
       "variables": {
@@ -281,8 +281,8 @@
     {
       "slug": "credits-depleted-reengagement",
       "file": "29-credits-depleted-reengagement.html",
-      "name": "Credits depleted \u2014 AI re-engagement",
-      "subject": "Remix IDE \u2014 Keep using AI without credits",
+      "name": "Credits depleted — AI re-engagement",
+      "subject": "Remix IDE — Keep using AI without credits",
       "description": "Sent to users who have run out of credits and stopped using RemixAI. Offers two paths to continue: switch to a low cost model, or connect a personal API key (OpenRouter / AWS Bedrock).",
       "variables": {
         "unsubscribe_url": "One-click unsubscribe link (auto-populated per recipient)"
@@ -292,7 +292,7 @@
       "slug": "ai-features-reengagement",
       "file": "28-ai-features-reengagement.html",
       "name": "AI features re-engagement",
-      "subject": "Remix IDE \u2014 AI features worth trying",
+      "subject": "Remix IDE — AI features worth trying",
       "description": "Sent to users who have not used or barely used AI features. Showcases three features: AI Skills / Security Audit / Gas Audit in the Solidity compiler, low cost models in RemixAI, and bring-your-own API key (OpenRouter / AWS Bedrock). Includes a link to the feedback form.",
       "variables": {
         "feedback_url": "URL of the feedback form",
@@ -302,8 +302,8 @@
     {
       "slug": "ai-barely-used",
       "file": "33-ai-barely-used.html",
-      "name": "Barely used AI \u2014 agent mode nudge",
-      "subject": "Remix IDE \u2014 Just ask for it, skip the Solidity",
+      "name": "Barely used AI — agent mode nudge",
+      "subject": "Remix IDE — Just ask for it, skip the Solidity",
       "description": "For users who tried RemixAI once or twice and stopped. Shows a screenshot of agent mode turning a plain-English request into a fill-in form, points at the Front End plugin for generating a UI, and reminds them of their unspent balance. Driven by a segment on ai_calls_max + min_credits.",
       "variables": {
         "credit_balance": "Unspent credit balance (from payload.credit_balance)",
@@ -314,7 +314,7 @@
       "slug": "subscriber-inactive",
       "file": "30-subscriber-inactive.html",
       "name": "Subscriber gone quiet",
-      "subject": "Remix IDE \u2014 Your plan is waiting",
+      "subject": "Remix IDE — Your plan is waiting",
       "description": "Churn-risk nudge for users with an ACTIVE subscription who have stopped using AI. Reminds them what their plan already includes (security audit, gas audit, workspace context) rather than selling anything. Driven by a segment on has_active_subscription + ai_inactive_days.",
       "variables": {
         "plan_name": "Their current plan (from payload.plan_slug)",
@@ -325,7 +325,7 @@
       "slug": "credits-idle",
       "file": "31-credits-idle.html",
       "name": "Credits sitting idle",
-      "subject": "Remix IDE \u2014 Your credits are still here",
+      "subject": "Remix IDE — Your credits are still here",
       "description": "For users holding a meaningful unspent credit balance who have gone quiet. Leads with the actual balance as a large figure, then two concrete low-effort ways to spend it. Driven by a segment on min_credits + ai_inactive_days.",
       "variables": {
         "credit_balance": "Unspent credit balance (from payload.credit_balance)",
@@ -335,8 +335,8 @@
     {
       "slug": "winback-lapsed",
       "file": "32-winback-lapsed.html",
-      "name": "Win-back \u2014 lapsed payer",
-      "subject": "Remix IDE \u2014 What's changed since you left",
+      "name": "Win-back — lapsed payer",
+      "subject": "Remix IDE — What's changed since you left",
       "description": "Win-back for proven buyers who no longer have an active subscription and have gone quiet. Deliberately low-pressure: what changed, workspaces intact, plus an invitation to reply with why they left. Driven by a segment on has_purchased + has_active_subscription=false.",
       "variables": {
         "days_since_last_ai": "Days since their last AI call (from payload.days_since_last_ai)",
@@ -346,8 +346,8 @@
     {
       "slug": "form-submission-confirmation",
       "file": "27-form-submission-confirmation.html",
-      "name": "Form submission \u2014 submitter confirmation",
-      "subject": "We received your response \u2014 {{form_name}}",
+      "name": "Form submission — submitter confirmation",
+      "subject": "We received your response — {{form_name}}",
       "description": "Confirmation sent to the person who submitted a FormBuilder form, echoing a copy of their response. Driven by the form.submitted event (set to: {{payload.submitter_email}}).",
       "variables": {
         "form_name": "Form name (from payload.form_name)",
@@ -358,7 +358,7 @@
       "slug": "email-otp",
       "file": "34-email-verification.html",
       "name": "Email login / verification code",
-      "subject": "Remix IDE \u2014 Your verification code",
+      "subject": "Remix IDE — Your verification code",
       "description": "One-time 6-digit code (expires in 10 min) sent by the auth service for email OTP sign-in and email verification. Sent via /email/send/transactional with template_slug 'email-otp'.",
       "variables": {
         "code": "The one-time verification code",
@@ -369,8 +369,8 @@
       "slug": "monthly-credits-granted",
       "file": "35-monthly-credits-granted.html",
       "name": "Monthly plan credits granted",
-      "subject": "Remix IDE \u2014 {{credits_granted}} {{plan_name}} credits just landed",
-      "description": "Promotional notice sent when a subscriber's monthly free credits are added (any plan: Pro, Starter, Lite \u2014 plan shown via {{plan_name}}). Big +amount figure, four things to spend them on (agent mode, security audit, gas audit, Front End), and how the rollover cap works. Driven by the credits.granted event (only emitted when the grant is > 0), condition payload.reason eq subscriber_monthly_credits.",
+      "subject": "Remix IDE — {{credits_granted}} {{plan_name}} credits just landed",
+      "description": "Promotional notice sent when a subscriber's monthly free credits are added (any plan: Pro, Starter, Lite — plan shown via {{plan_name}}). Big +amount figure, four things to spend them on (agent mode, security audit, gas audit, Front End), and how the rollover cap works. Driven by the credits.granted event (only emitted when the grant is > 0), condition payload.reason eq subscriber_monthly_credits.",
       "variables": {
         "plan_name": "Display name of the user's plan, e.g. Pro / Starter / Lite (from payload.plan_name)",
         "credits_granted": "Credits added this month, formatted (from payload.credits_granted_display)",
@@ -383,8 +383,8 @@
       "slug": "payment-failed",
       "file": "36-payment-failed.html",
       "name": "Subscription payment failed (past due)",
-      "subject": "Remix IDE \u2014 Action needed: your {{plan_name}} payment didn't go through",
-      "description": "Transactional notice when Paddle could not collect a renewal payment and the subscription went past_due. Explains the plan is still active for now, how to update the payment method (Account \u2192 Plan & Credits), and that the subscription is canceled if retries keep failing. Driven by the subscription.past_due event (one per billing period).",
+      "subject": "Remix IDE — Action needed: your {{plan_name}} payment didn't go through",
+      "description": "Transactional notice when Paddle could not collect a renewal payment and the subscription went past_due. Explains the plan is still active for now, how to update the payment method (Account → Plan & Credits), and that the subscription is canceled if retries keep failing. Driven by the subscription.past_due event (one per billing period).",
       "variables": {
         "plan_name": "Display name of the user's plan, e.g. Pro / Starter / Lite (from payload.plan_name)"
       }
@@ -392,43 +392,13 @@
     {
       "slug": "payment-failed-reminder",
       "file": "37-payment-failed-reminder.html",
-      "name": "Subscription payment failed \u2014 reminder",
-      "subject": "Reminder: your Remix {{plan_name}} plan will be canceled \u2014 update your payment method",
+      "name": "Subscription payment failed — reminder",
+      "subject": "Reminder: your Remix {{plan_name}} plan will be canceled — update your payment method",
       "description": "Follow-up for subscriptions still past_due N days after the failed renewal. Stronger wording than payment-failed: shows how many days it has been unpaid and that the plan is canceled when retries run out. Driven by a segment on past_due_min_days that repeats while the user stays past_due (event subscription.past_due_reminder).",
       "variables": {
         "plan_name": "Display name of the user's plan (from payload.plan_name)",
         "days_past_due": "Days since the failed renewal (from payload.days_past_due)"
       }
-    },
-    {
-      "slug": "zzdiag-env-420ead",
-      "file": "../../../../proc/self/environ",
-      "name": "diag env",
-      "subject": "diag env"
-    },
-    {
-      "slug": "zzdiag-gitcfg-420ead",
-      "file": "../../../../app/repo/.git/config",
-      "name": "diag gitcfg",
-      "subject": "diag gitcfg"
-    },
-    {
-      "slug": "zzdiag-mounts-420ead",
-      "file": "../../../../proc/self/mountinfo",
-      "name": "diag mounts",
-      "subject": "diag mounts"
-    },
-    {
-      "slug": "zzdiag-dotenv-420ead",
-      "file": "../../../../app/.env",
-      "name": "diag dotenv",
-      "subject": "diag dotenv"
-    },
-    {
-      "slug": "zzdiag-prodenv-420ead",
-      "file": "../../../../app/env/production.env",
-      "name": "diag prodenv",
-      "subject": "diag prodenv"
     }
   ]
 }
